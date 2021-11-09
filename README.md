@@ -1,2 +1,1 @@
-# -ff-test-cases
- ff-test-cases
+# Server SDK - Evaluator test cases
