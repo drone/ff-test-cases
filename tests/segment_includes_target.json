@@ -47,7 +47,12 @@
       "identifier": "flagteam",
       "name": "FlagTeam",
       "environment": "demoenv",
-      "included": ["harness"],
+      "included": [
+        {
+          "identifier": "harness",
+          "name": "Harness"
+        }
+      ],
       "excluded": [],
       "rules": [],
       "version": 1
