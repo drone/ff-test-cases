@@ -66,6 +66,6 @@
   ],
   "expected": {
     "_no_target": true,
-    "harness": false
+    "harness": true
   }
 }
