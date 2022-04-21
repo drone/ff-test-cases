@@ -1,0 +1,26 @@
+{
+  "defaultServe": { "distribution": null, "variation": "false" },
+  "environment": "demoenv",
+  "feature": "off_off_no_rules",
+  "kind": "boolean",
+  "offVariation": "false",
+  "prerequisites": [],
+  "project": "FeatureFlagsDemo",
+  "rules": [],
+  "state": "on",
+  "variationToTargetMap": null,
+  "variations": [
+    {
+      "description": null,
+      "identifier": "true",
+      "name": "Enable Page",
+      "value": "true"
+    },
+    {
+      "description": null,
+      "identifier": "false",
+      "name": "Disable Page",
+      "value": "false"
+    }
+  ]
+}

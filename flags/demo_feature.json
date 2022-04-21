@@ -1,0 +1,43 @@
+{
+  "defaultServe": { "distribution": null, "variation": "true" },
+  "environment": "demoenv",
+  "feature": "demo_feature",
+  "kind": "boolean",
+  "offVariation": "false",
+  "prerequisites": [],
+  "project": "FeatureFlagsDemo",
+  "rules": [
+    {
+      "ruleId": "",
+      "priority": 1000,
+      "clauses": [
+        {
+          "id": "",
+          "attribute": "",
+          "op": "segmentMatch",
+          "values": ["flagteam"]
+        }
+      ],
+      "serve": {
+        "distribution": null,
+        "variation": "false"
+      }
+    }
+  ],
+  "state": "on",
+  "variationToTargetMap": null,
+  "variations": [
+    {
+      "description": null,
+      "identifier": "true",
+      "name": "Enable Page",
+      "value": "true"
+    },
+    {
+      "description": null,
+      "identifier": "false",
+      "name": "Disable Page",
+      "value": "false"
+    }
+  ]
+}

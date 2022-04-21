@@ -1,0 +1,48 @@
+{
+  "defaultServe": { "distribution": null, "variation": "true" },
+  "environment": "demoenv",
+  "feature": "prereq_simple",
+  "kind": "boolean",
+  "offVariation": "false",
+  "prerequisites": [
+    {
+      "feature": "bool_on_simple_rule",
+      "variations": ["true", "false"]
+    }
+  ],
+  "project": "FeatureFlagsDemo",
+  "rules": [
+    {
+      "ruleId": "",
+      "priority": 1000,
+      "clauses": [
+        {
+          "id": "",
+          "attribute": "identifier",
+          "op": "equal",
+          "values": ["harness"]
+        }
+      ],
+      "serve": {
+        "distribution": null,
+        "variation": "false"
+      }
+    }
+  ],
+  "state": "on",
+  "variationToTargetMap": null,
+  "variations": [
+    {
+      "description": null,
+      "identifier": "true",
+      "name": "Enable Page",
+      "value": "true"
+    },
+    {
+      "description": null,
+      "identifier": "false",
+      "name": "Disable Page",
+      "value": "false"
+    }
+  ]
+}
