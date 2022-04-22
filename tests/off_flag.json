@@ -1,30 +1,33 @@
 {
-  "flag": {
-    "defaultServe": { "distribution": null, "variation": "true" },
-    "environment": "demoenv",
-    "feature": "AlfaTest",
-    "kind": "boolean",
-    "offVariation": "false",
-    "prerequisites": [],
-    "project": "FeatureFlagsDemo",
-    "rules": [],
-    "state": "off",
-    "variationToTargetMap": null,
-    "variations": [
-      {
-        "description": null,
-        "identifier": "true",
-        "name": "Enable Page",
-        "value": "true"
-      },
-      {
-        "description": null,
-        "identifier": "false",
-        "name": "Disable Page",
-        "value": "false"
-      }
-    ]
-  },
+  "apiVersion": "1.0",
+  "flags": [
+    {
+      "defaultServe": { "distribution": null, "variation": "true" },
+      "environment": "dev",
+      "feature": "bool-flag",
+      "kind": "boolean",
+      "offVariation": "false",
+      "prerequisites": [],
+      "project": "default",
+      "rules": [],
+      "state": "off",
+      "variationToTargetMap": null,
+      "variations": [
+        {
+          "description": null,
+          "identifier": "true",
+          "name": "Enable Page",
+          "value": "true"
+        },
+        {
+          "description": null,
+          "identifier": "false",
+          "name": "Disable Page",
+          "value": "false"
+        }
+      ]
+    }
+  ],
   "targets": [
     {
       "identifier": "harness",
@@ -37,8 +40,8 @@
       }
     }
   ],
-  "expected": {
-    "_no_target": false,
-    "harness": false
-  }
+  "tests": [
+    { "flag": "bool-flag", "target": "_no_target", "expected": false },
+    { "flag": "bool-flag", "target": "harness", "expected": false }
+  ]
 }
