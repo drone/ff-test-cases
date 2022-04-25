@@ -25,7 +25,7 @@ const source = "./ff-test-cases/tests"
 
 type test struct {
 	Flag     string      `json:"flag"`
-	Target   string      `json:"target"`
+	Target   *string     `json:"target"`
 	Expected interface{} `json:"expected"`
 }
 
@@ -95,12 +95,15 @@ func TestEvaluator(t *testing.T) {
 		}
 
 		for _, testCase := range fixture.Tests {
-			testName := fmt.Sprintf("test fixture %s with flag %s and target %s", fixture.Filename, testCase.Flag, testCase.Target)
+			testName := fmt.Sprintf("test fixture %s with flag %s", fixture.Filename, testCase.Flag)
+			if testCase.Target != nil {
+				testName = fmt.Sprintf("%s and target %s", testName, *testCase.Target)
+			}
 			t.Run(testName, func(t *testing.T) {
 				var target *evaluation.Target
-				if testCase.Target != "_no_target" {
+				if testCase.Target != nil {
 					for i, val := range fixture.Targets {
-						if val.Identifier == testCase.Target {
+						if val.Identifier == *testCase.Target {
 							target = &fixture.Targets[i]
 						}
 					}
