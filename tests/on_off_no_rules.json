@@ -41,7 +41,7 @@
     }
   ],
   "tests": [
-    { "flag": "bool-flag", "target": "_no_target", "expected": true },
+    { "flag": "bool-flag", "expected": true },
     { "flag": "bool-flag", "target": "harness", "expected": true }
   ]
 }

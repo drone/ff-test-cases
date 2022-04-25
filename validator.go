@@ -11,7 +11,7 @@ const source = "./tests"
 
 type test struct {
 	Flag     string      `json:"flag"`
-	Target   string      `json:"target"`
+	Target   *string     `json:"target"`
 	Expected interface{} `json:"expected"`
 }
 
@@ -40,8 +40,8 @@ type testFile struct {
 
 func (t testFile) validate() error {
 	for _, testCase := range t.Tests {
-		if testCase.Target != "_no_target" && t.Targets.Find(testCase.Target) == -1 {
-			return fmt.Errorf("target %s not found", testCase.Target)
+		if testCase.Target != nil && t.Targets.Find(*testCase.Target) == -1 {
+			return fmt.Errorf("target %s not found", *testCase.Target)
 		}
 
 		if t.Flags.Find(testCase.Flag) == -1 {
