@@ -1,47 +1,50 @@
 {
-  "flag": {
-    "defaultServe": { "distribution": null, "variation": "true" },
-    "environment": "demoenv",
-    "feature": "demo_feature",
-    "kind": "boolean",
-    "offVariation": "false",
-    "prerequisites": [],
-    "project": "FeatureFlagsDemo",
-    "rules": [
-      {
-        "ruleId": "",
-        "priority": 1000,
-        "clauses": [
-          {
-            "id": "",
-            "attribute": "",
-            "op": "segmentMatch",
-            "values": ["flagteam"]
+  "apiVersion": "1.0",
+  "flags": [
+    {
+      "defaultServe": { "distribution": null, "variation": "true" },
+      "environment": "dev",
+      "feature": "bool-flag",
+      "kind": "boolean",
+      "offVariation": "false",
+      "prerequisites": [],
+      "project": "default",
+      "rules": [
+        {
+          "ruleId": "",
+          "priority": 1000,
+          "clauses": [
+            {
+              "id": "",
+              "attribute": "",
+              "op": "segmentMatch",
+              "values": ["flagteam"]
+            }
+          ],
+          "serve": {
+            "distribution": null,
+            "variation": "false"
           }
-        ],
-        "serve": {
-          "distribution": null,
-          "variation": "false"
         }
-      }
-    ],
-    "state": "on",
-    "variationToTargetMap": null,
-    "variations": [
-      {
-        "description": null,
-        "identifier": "true",
-        "name": "Enable Page",
-        "value": "true"
-      },
-      {
-        "description": null,
-        "identifier": "false",
-        "name": "Disable Page",
-        "value": "false"
-      }
-    ]
-  },
+      ],
+      "state": "on",
+      "variationToTargetMap": null,
+      "variations": [
+        {
+          "description": null,
+          "identifier": "true",
+          "name": "Enable Page",
+          "value": "true"
+        },
+        {
+          "description": null,
+          "identifier": "false",
+          "name": "Disable Page",
+          "value": "false"
+        }
+      ]
+    }
+  ],
   "segments": [
     {
       "identifier": "flagteam",
@@ -64,8 +67,8 @@
       "name": "Harness"
     }
   ],
-  "expected": {
-    "_no_target": true,
-    "harness": false
-  }
+  "tests": [
+    { "flag": "bool-flag", "expected": true },
+    { "flag": "bool-flag", "target": "harness", "expected": false }
+  ]
 }

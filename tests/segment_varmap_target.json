@@ -1,12 +1,14 @@
 {
-    "flag": {
+  "apiVersion": "1.0",
+  "flags": [
+    {
       "defaultServe": { "distribution": null, "variation": "true" },
-      "environment": "demoenv",
-      "feature": "demo_feature",
+      "environment": "dev",
+      "feature": "bool-flag",
       "kind": "boolean",
       "offVariation": "false",
       "prerequisites": [],
-      "project": "FeatureFlagsDemo",
+      "project": "default",
       "rules": [
         {
           "ruleId": "",
@@ -29,9 +31,7 @@
       "variationToTargetMap": [
         {
           "variation": "false",
-          "targetSegments": [
-            "flagteam"
-          ]
+          "targetSegments": ["flagteam"]
         }
       ],
       "variations": [
@@ -48,31 +48,32 @@
           "value": "false"
         }
       ]
-    },
-    "segments": [
-      {
-        "identifier": "flagteam",
-        "name": "FlagTeam",
-        "environment": "demoenv",
-        "included": [
-          {
-            "identifier": "harness",
-            "name": "Harness"
-          }
-        ],
-        "excluded": [],
-        "rules": [],
-        "version": 1
-      }
-    ],
-    "targets": [
-      {
-        "identifier": "harness",
-        "name": "Harness"
-      }
-    ],
-    "expected": {
-      "_no_target": true,
-      "harness": false
     }
-  }
+  ],
+  "segments": [
+    {
+      "identifier": "flagteam",
+      "name": "FlagTeam",
+      "environment": "demoenv",
+      "included": [
+        {
+          "identifier": "harness",
+          "name": "Harness"
+        }
+      ],
+      "excluded": [],
+      "rules": [],
+      "version": 1
+    }
+  ],
+  "targets": [
+    {
+      "identifier": "harness",
+      "name": "Harness"
+    }
+  ],
+  "tests": [
+    { "flag": "bool-flag", "expected": true },
+    { "flag": "bool-flag", "target": "harness", "expected": false }
+  ]
+}
