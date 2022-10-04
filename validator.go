@@ -15,11 +15,13 @@ type test struct {
 	Expected interface{} `json:"expected"`
 }
 
+// Model defines an interface for FeatureConfig, Segment and Target types
 type Model interface {
 	FeatureConfig | Segment | Target
 	GetIdentifier() string
 }
 
+// Entities is a slice of Models
 type Entities[T Model] []T
 
 func (e Entities[T]) Find(identifier string) int {
