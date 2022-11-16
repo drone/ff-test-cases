@@ -2,11 +2,11 @@
   "apiVersion": "1.0",
   "flags": [
     {
-      "defaultServe": { "distribution": null, "variation": "true" },
+      "defaultServe": { "distribution": null, "variation": "enable" },
       "environment": "dev",
       "feature": "bool-flag-prereq",
       "kind": "boolean",
-      "offVariation": "false",
+      "offVariation": "disable",
       "prerequisites": [],
       "project": "default",
       "rules": [
@@ -23,7 +23,7 @@
           ],
           "serve": {
             "distribution": null,
-            "variation": "false"
+            "variation": "disable"
           }
         }
       ],
@@ -32,13 +32,13 @@
       "variations": [
         {
           "description": null,
-          "identifier": "true",
+          "identifier": "enable",
           "name": "Enable Page",
           "value": "true"
         },
         {
           "description": null,
-          "identifier": "false",
+          "identifier": "disable",
           "name": "Disable Page",
           "value": "false"
         }
@@ -53,7 +53,7 @@
       "prerequisites": [
         {
           "feature": "bool-flag-prereq",
-          "variations": ["true", "false"]
+          "variations": ["enable", "disable"]
         }
       ],
       "project": "default",
