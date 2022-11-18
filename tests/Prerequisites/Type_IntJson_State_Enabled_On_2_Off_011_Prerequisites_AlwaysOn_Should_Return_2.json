@@ -1,0 +1,628 @@
+{
+	"flags": [
+		{
+			"defaultServe": {
+				"variation": "true"
+			},
+			"environment": "",
+			"feature": "AlwaysOn_Type_Bool_State_Enabled_On_True_Off_False_",
+			"kind": "boolean",
+			"offVariation": "false",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "on",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "True",
+					"identifier": "true",
+					"name": "True",
+					"value": "true"
+				},
+				{
+					"description": "False",
+					"identifier": "false",
+					"name": "False",
+					"value": "false"
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "sonnet19"
+			},
+			"environment": "",
+			"feature": "AlwaysOn_Type_str_State_Enabled_On_sonnet19_Off_sonnet53_",
+			"kind": "string",
+			"offVariation": "sonnet53",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "on",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "An excerpt from the hobbit",
+					"identifier": "thehobbit",
+					"name": "The Hobbit",
+					"value": "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the\nends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down\non or to eat: it was a hobbit­hole, and that means comfort.\nIt had a perfectly round door like a porthole, painted green, with a shiny yellow brass knob\nin the exact middle. The door opened on to a tube­shaped hall like a tunnel: a very comfortable\ntunnel without smoke, with panelled walls, and floors tiled and carpeted, provided with polished\nchairs, and lots and lots of pegs for hats and coats ­ the hobbit was fond of visitors. The tunnel\nwound on and on, going fairly but not quite straight into the side of the hill ­ The Hill, as all the\npeople for many miles round called it ­ and many little round doors opened out of it, first on\none side and then on another. No going upstairs for the hobbit: bedrooms, bathrooms, cellars,\npantries (lots of these), wardrobes (he had whole rooms devoted to clothes), kitchens,\ndining­rooms, all were on the same floor, and indeed on the same passage. The best rooms\nwere all on the left­hand side (going in), for these were the only ones to have windows,\ndeep­set round windows looking over his garden and meadows beyond, sloping down to the\nriver."
+				},
+				{
+					"description": "another small sonnet",
+					"identifier": "sonnet19",
+					"name": "Sonnet 19",
+					"value": "Devouring Time, blunt thou the lion’s paws,\nAnd make the earth devour her own sweet brood;\nPluck the keen teeth from the fierce tiger’s jaws,\nAnd burn the long-liv’d phoenix, in her blood;\nMake glad and sorry seasons as thou fleet’st,\nAnd do whate’er thou wilt, swift-footed Time,\nTo the wide world and all her fading sweets;\nBut I forbid thee one most heinous crime:\nO! carve not with thy hours my love’s fair brow,\nNor draw no lines there with thine antique pen;\nHim in thy course untainted do allow\nFor beauty’s pattern to succeeding men.\nYet, do thy worst old Time: despite thy wrong,\nMy love shall in my verse ever live young."
+				},
+				{
+					"description": "a small sonnet",
+					"identifier": "sonnet53",
+					"name": "Sonnet 53",
+					"value": "What is your substance, whereof are you made,\nThat millions of strange shadows on you tend?\nSince every one hath, every one, one shade,\nAnd you but one, can every shadow lend.\nDescribe Adonis, and the counterfeit\nIs poorly imitated after you;\nOn Helen’s cheek all art of beauty set,\nAnd you in Grecian tires are painted new:\nSpeak of the spring, and foison of the year,\nThe one doth shadow of your beauty show,\nThe other as your bounty doth appear;\nAnd you in every blessed shape we know.\nIn all external grace you have some part,\nBut you like none, none you, for constant heart."
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "2"
+			},
+			"environment": "",
+			"feature": "AlwaysOn_Type_int_State_Enabled_On_2_Off_011_",
+			"kind": "int",
+			"offVariation": "0.11",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "on",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "a decimal number",
+					"identifier": "0.11",
+					"name": "Decimal",
+					"value": "0.11"
+				},
+				{
+					"description": "a whole number",
+					"identifier": "2",
+					"name": "Two",
+					"value": "2"
+				},
+				{
+					"description": "a big number",
+					"identifier": "324523",
+					"name": "Small Number",
+					"value": "324523"
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "complexJSON"
+			},
+			"environment": "",
+			"feature": "AlwaysOn_Type_json_State_Enabled_On_Com_Off_Val_",
+			"kind": "json",
+			"offVariation": "validJSON",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "on",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "A valid piece of JSON",
+					"identifier": "validJSON",
+					"name": "Valid JSON",
+					"value": "{\"number\": \"£5\"}"
+				},
+				{
+					"description": "A Valid empty JSON object",
+					"identifier": "emptyJSON",
+					"name": "Empty JSON",
+					"value": "{}"
+				},
+				{
+					"description": "JSON object containing multiple keys",
+					"identifier": "complexJSON",
+					"name": "Complex JSON",
+					"value": "{\"Beer\": \"£5\", \"Wine\": \"£6.50\"}"
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "sonnet19"
+			},
+			"environment": "",
+			"feature": "AlwaysOff_Type_str_State_Disabled_On_sonnet19_Off_sonnet53_",
+			"kind": "string",
+			"offVariation": "sonnet53",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "off",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "a small sonnet",
+					"identifier": "sonnet53",
+					"name": "Sonnet 53",
+					"value": "What is your substance, whereof are you made,\nThat millions of strange shadows on you tend?\nSince every one hath, every one, one shade,\nAnd you but one, can every shadow lend.\nDescribe Adonis, and the counterfeit\nIs poorly imitated after you;\nOn Helen’s cheek all art of beauty set,\nAnd you in Grecian tires are painted new:\nSpeak of the spring, and foison of the year,\nThe one doth shadow of your beauty show,\nThe other as your bounty doth appear;\nAnd you in every blessed shape we know.\nIn all external grace you have some part,\nBut you like none, none you, for constant heart."
+				},
+				{
+					"description": "An excerpt from the hobbit",
+					"identifier": "thehobbit",
+					"name": "The Hobbit",
+					"value": "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the\nends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down\non or to eat: it was a hobbit­hole, and that means comfort.\nIt had a perfectly round door like a porthole, painted green, with a shiny yellow brass knob\nin the exact middle. The door opened on to a tube­shaped hall like a tunnel: a very comfortable\ntunnel without smoke, with panelled walls, and floors tiled and carpeted, provided with polished\nchairs, and lots and lots of pegs for hats and coats ­ the hobbit was fond of visitors. The tunnel\nwound on and on, going fairly but not quite straight into the side of the hill ­ The Hill, as all the\npeople for many miles round called it ­ and many little round doors opened out of it, first on\none side and then on another. No going upstairs for the hobbit: bedrooms, bathrooms, cellars,\npantries (lots of these), wardrobes (he had whole rooms devoted to clothes), kitchens,\ndining­rooms, all were on the same floor, and indeed on the same passage. The best rooms\nwere all on the left­hand side (going in), for these were the only ones to have windows,\ndeep­set round windows looking over his garden and meadows beyond, sloping down to the\nriver."
+				},
+				{
+					"description": "another small sonnet",
+					"identifier": "sonnet19",
+					"name": "Sonnet 19",
+					"value": "Devouring Time, blunt thou the lion’s paws,\nAnd make the earth devour her own sweet brood;\nPluck the keen teeth from the fierce tiger’s jaws,\nAnd burn the long-liv’d phoenix, in her blood;\nMake glad and sorry seasons as thou fleet’st,\nAnd do whate’er thou wilt, swift-footed Time,\nTo the wide world and all her fading sweets;\nBut I forbid thee one most heinous crime:\nO! carve not with thy hours my love’s fair brow,\nNor draw no lines there with thine antique pen;\nHim in thy course untainted do allow\nFor beauty’s pattern to succeeding men.\nYet, do thy worst old Time: despite thy wrong,\nMy love shall in my verse ever live young."
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "true"
+			},
+			"environment": "",
+			"feature": "AlwaysOff_Type_Bool_State_Disabled_On_True_Off_False_",
+			"kind": "boolean",
+			"offVariation": "false",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "off",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "True",
+					"identifier": "true",
+					"name": "True",
+					"value": "true"
+				},
+				{
+					"description": "False",
+					"identifier": "false",
+					"name": "False",
+					"value": "false"
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "2"
+			},
+			"environment": "",
+			"feature": "AlwaysOff_Type_int_State_Disabled_On_2_Off_011_",
+			"kind": "int",
+			"offVariation": "0.11",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "off",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "a decimal number",
+					"identifier": "0.11",
+					"name": "Decimal",
+					"value": "0.11"
+				},
+				{
+					"description": "a whole number",
+					"identifier": "2",
+					"name": "Two",
+					"value": "2"
+				},
+				{
+					"description": "a big number",
+					"identifier": "324523",
+					"name": "Small Number",
+					"value": "324523"
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "complexJSON"
+			},
+			"environment": "",
+			"feature": "AlwaysOff_Type_json_State_Disabled_On_Com_Off_Val_",
+			"kind": "json",
+			"offVariation": "validJSON",
+			"prerequisites": null,
+			"project": "testproject",
+			"rules": null,
+			"state": "off",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "A valid piece of JSON",
+					"identifier": "validJSON",
+					"name": "Valid JSON",
+					"value": "{\"number\": \"£5\"}"
+				},
+				{
+					"description": "A Valid empty JSON object",
+					"identifier": "emptyJSON",
+					"name": "Empty JSON",
+					"value": "{}"
+				},
+				{
+					"description": "JSON object containing multiple keys",
+					"identifier": "complexJSON",
+					"name": "Complex JSON",
+					"value": "{\"Beer\": \"£5\", \"Wine\": \"£6.50\"}"
+				}
+			],
+			"version": 1
+		},
+		{
+			"defaultServe": {
+				"variation": "2"
+			},
+			"environment": "",
+			"feature": "Type_IntJson_State_Enabled_On_2_Off_011_Prerequisites_AlwaysOn_Should_Return_2",
+			"kind": "int",
+			"offVariation": "0.11",
+			"prerequisites": [
+				{
+					"feature": "AlwaysOn_Type_json_State_Enabled_On_Com_Off_Val_",
+					"variations": [
+						"complexJSON"
+					]
+				}
+			],
+			"project": "testproject",
+			"rules": null,
+			"state": "on",
+			"variationToTargetMap": null,
+			"variations": [
+				{
+					"description": "a decimal number",
+					"identifier": "0.11",
+					"name": "Decimal",
+					"value": "0.11"
+				},
+				{
+					"description": "a whole number",
+					"identifier": "2",
+					"name": "Two",
+					"value": "2"
+				},
+				{
+					"description": "a big number",
+					"identifier": "324523",
+					"name": "Small Number",
+					"value": "324523"
+				}
+			],
+			"version": 1
+		}
+	],
+	"segments": [
+		{
+			"excluded": null,
+			"identifier": "IncludedOnly",
+			"included": [
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "one",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "two",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "three",
+					"name": "",
+					"org": "",
+					"project": ""
+				}
+			],
+			"name": "Group that includes targets"
+		},
+		{
+			"excluded": [
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "one",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "two",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "three",
+					"name": "",
+					"org": "",
+					"project": ""
+				}
+			],
+			"identifier": "ExcludedOnly",
+			"included": null,
+			"name": "Group that excludes targets"
+		},
+		{
+			"excluded": [
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "four",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "five",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "six",
+					"name": "",
+					"org": "",
+					"project": ""
+				}
+			],
+			"identifier": "IncludeAndExcludeGroup",
+			"included": [
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "one",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "two",
+					"name": "",
+					"org": "",
+					"project": ""
+				},
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "three",
+					"name": "",
+					"org": "",
+					"project": ""
+				}
+			],
+			"name": "Group that includes and excludes targets"
+		},
+		{
+			"excluded": null,
+			"identifier": "StartsWithT",
+			"included": null,
+			"name": "Starts With T",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "starts_with",
+					"values": [
+						"t"
+					]
+				}
+			]
+		},
+		{
+			"excluded": null,
+			"identifier": "EqualsOne",
+			"included": null,
+			"name": "Equals With One",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "equal",
+					"values": [
+						"one"
+					]
+				}
+			]
+		},
+		{
+			"excluded": null,
+			"identifier": "EqualsTwo",
+			"included": null,
+			"name": "Equals With Two",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "equal",
+					"values": [
+						"two"
+					]
+				}
+			]
+		},
+		{
+			"excluded": null,
+			"identifier": "EqualsThree",
+			"included": null,
+			"name": "Equals With Three",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "equal",
+					"values": [
+						"three"
+					]
+				}
+			]
+		},
+		{
+			"excluded": [
+				{
+					"account": "",
+					"environment": "",
+					"identifier": "three",
+					"name": "",
+					"org": "",
+					"project": ""
+				}
+			],
+			"identifier": "StartsWithTExcludesThree",
+			"included": null,
+			"name": "Equals With Three",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "starts_with",
+					"values": [
+						"t"
+					]
+				}
+			]
+		},
+		{
+			"excluded": null,
+			"identifier": "InOneTwoThree",
+			"included": null,
+			"name": "In operator with multiple values",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "in",
+					"values": [
+						"one",
+						"two",
+						"three"
+					]
+				}
+			]
+		},
+		{
+			"excluded": null,
+			"identifier": "GroupWithMultipleOrRules",
+			"included": null,
+			"name": "Equals With Three and two other rules",
+			"rules": [
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "equal",
+					"values": [
+						"madeupnotreal"
+					]
+				},
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "equal",
+					"values": [
+						"three"
+					]
+				},
+				{
+					"attribute": "identifier",
+					"negate": false,
+					"op": "equal",
+					"values": [
+						"anothermadeupvalue"
+					]
+				}
+			]
+		}
+	],
+	"targets": [
+		{
+			"identifier": "one",
+			"name": "Target One",
+			"attributes": {
+				"location": "emea"
+			}
+		},
+		{
+			"identifier": "two",
+			"name": "Target Two",
+			"attributes": null
+		},
+		{
+			"identifier": "three",
+			"name": "Target Three",
+			"attributes": null
+		},
+		{
+			"identifier": "four",
+			"name": "Target Four",
+			"attributes": null
+		},
+		{
+			"identifier": "five",
+			"name": "Target Five",
+			"attributes": null
+		},
+		{
+			"identifier": "six",
+			"name": "Target Six",
+			"attributes": null
+		},
+		{
+			"identifier": "seven",
+			"name": "Target Seven",
+			"attributes": null
+		},
+		{
+			"identifier": "eight",
+			"name": "Target Eight",
+			"attributes": null
+		},
+		{
+			"identifier": "anonymous",
+			"name": "Anonymous Target",
+			"attributes": null
+		}
+	],
+	"tests": [
+		{
+			"flag": "Type_IntJson_State_Enabled_On_2_Off_011_Prerequisites_AlwaysOn_Should_Return_2",
+			"expected": 2
+		}
+	]
+}
