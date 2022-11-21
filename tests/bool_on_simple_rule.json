@@ -4,7 +4,7 @@
     {
       "defaultServe": { "distribution": null, "variation": "true" },
       "environment": "dev",
-      "feature": "bool-flag",
+      "feature": "bool-flag-on",
       "kind": "boolean",
       "offVariation": "false",
       "prerequisites": [],
@@ -58,8 +58,8 @@
     }
   ],
   "tests": [
-    { "flag": "bool-flag", "expected": true },
-    { "flag": "bool-flag", "target": "harness", "expected": false },
-    { "flag": "bool-flag", "target": "enver", "expected": true }
+    { "flag": "bool-flag-on", "expected": true },
+    { "flag": "bool-flag-on", "target": "harness", "expected": false },
+    { "flag": "bool-flag-on", "target": "enver", "expected": true }
   ]
 }
