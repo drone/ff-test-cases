@@ -1,5 +1,5 @@
 {
-  "flag": {
+  "flags":[ {
     "defaultServe": { "distribution": null, "variation": "true" },
     "environment": "demoenv",
     "feature": "AlfaTest",
@@ -41,7 +41,7 @@
         "value": "false"
       }
     ]
-  },
+  }],
   "targets": [
     {
       "identifier": "harness",
@@ -54,8 +54,8 @@
       }
     }
   ],
-  "expected": {
-    "_no_target": true,
-    "john": true 
-  }
+  "tests": [
+    { "flag": "AlfaTest", "expected": true },
+    { "flag": "AlfaTest", "target": "john", "expected": true }
+  ]
 }
