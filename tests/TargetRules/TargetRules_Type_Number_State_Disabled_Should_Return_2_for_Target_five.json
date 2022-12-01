@@ -273,13 +273,13 @@
 				"variation": "0.11"
 			},
 			"environment": "",
-			"feature": "TargetRules_Type_Number_State_Enabled_Should_Return_2_for_Target_four",
+			"feature": "TargetRules_Type_Number_State_Disabled_Should_Return_2_for_Target_five",
 			"kind": "int",
 			"offVariation": "2",
 			"prerequisites": null,
 			"project": "testproject",
 			"rules": null,
-			"state": "on",
+			"state": "off",
 			"variationToTargetMap": [
 				{
 					"targets": [
@@ -569,8 +569,8 @@
 	],
 	"tests": [
 		{
-			"flag": "TargetRules_Type_Number_State_Enabled_Should_Return_2_for_Target_four",
-			"target": "four",
+			"flag": "TargetRules_Type_Number_State_Disabled_Should_Return_2_for_Target_five",
+			"target": "five",
 			"expected": "2"
 		}
 	]

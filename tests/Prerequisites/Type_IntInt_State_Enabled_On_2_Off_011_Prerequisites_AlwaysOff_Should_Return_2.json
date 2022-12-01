@@ -149,12 +149,6 @@
 			"variationToTargetMap": null,
 			"variations": [
 				{
-					"description": "a small sonnet",
-					"identifier": "sonnet53",
-					"name": "Sonnet 53",
-					"value": "What is your substance, whereof are you made,\nThat millions of strange shadows on you tend?\nSince every one hath, every one, one shade,\nAnd you but one, can every shadow lend.\nDescribe Adonis, and the counterfeit\nIs poorly imitated after you;\nOn Helen’s cheek all art of beauty set,\nAnd you in Grecian tires are painted new:\nSpeak of the spring, and foison of the year,\nThe one doth shadow of your beauty show,\nThe other as your bounty doth appear;\nAnd you in every blessed shape we know.\nIn all external grace you have some part,\nBut you like none, none you, for constant heart."
-				},
-				{
 					"description": "An excerpt from the hobbit",
 					"identifier": "thehobbit",
 					"name": "The Hobbit",
@@ -165,6 +159,12 @@
 					"identifier": "sonnet19",
 					"name": "Sonnet 19",
 					"value": "Devouring Time, blunt thou the lion’s paws,\nAnd make the earth devour her own sweet brood;\nPluck the keen teeth from the fierce tiger’s jaws,\nAnd burn the long-liv’d phoenix, in her blood;\nMake glad and sorry seasons as thou fleet’st,\nAnd do whate’er thou wilt, swift-footed Time,\nTo the wide world and all her fading sweets;\nBut I forbid thee one most heinous crime:\nO! carve not with thy hours my love’s fair brow,\nNor draw no lines there with thine antique pen;\nHim in thy course untainted do allow\nFor beauty’s pattern to succeeding men.\nYet, do thy worst old Time: despite thy wrong,\nMy love shall in my verse ever live young."
+				},
+				{
+					"description": "a small sonnet",
+					"identifier": "sonnet53",
+					"name": "Sonnet 53",
+					"value": "What is your substance, whereof are you made,\nThat millions of strange shadows on you tend?\nSince every one hath, every one, one shade,\nAnd you but one, can every shadow lend.\nDescribe Adonis, and the counterfeit\nIs poorly imitated after you;\nOn Helen’s cheek all art of beauty set,\nAnd you in Grecian tires are painted new:\nSpeak of the spring, and foison of the year,\nThe one doth shadow of your beauty show,\nThe other as your bounty doth appear;\nAnd you in every blessed shape we know.\nIn all external grace you have some part,\nBut you like none, none you, for constant heart."
 				}
 			],
 			"version": 1
@@ -213,6 +213,12 @@
 			"variationToTargetMap": null,
 			"variations": [
 				{
+					"description": "a big number",
+					"identifier": "324523",
+					"name": "Small Number",
+					"value": "324523"
+				},
+				{
 					"description": "a decimal number",
 					"identifier": "0.11",
 					"name": "Decimal",
@@ -223,12 +229,6 @@
 					"identifier": "2",
 					"name": "Two",
 					"value": "2"
-				},
-				{
-					"description": "a big number",
-					"identifier": "324523",
-					"name": "Small Number",
-					"value": "324523"
 				}
 			],
 			"version": 1
@@ -278,7 +278,7 @@
 			"offVariation": "0.11",
 			"prerequisites": [
 				{
-					"feature": "AlwaysOff_Type_int_State_Disabled_On_2_Off_011_",
+					"feature": "AlwaysOff;Type=int;State=Disabled;On=2;Off=0.11;",
 					"variations": [
 						"0.11"
 					]
@@ -313,128 +313,47 @@
 	],
 	"segments": [
 		{
-			"excluded": null,
 			"identifier": "IncludedOnly",
+			"name": "Group that includes targets",
 			"included": [
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "one",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "two",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "three",
-					"name": "",
-					"org": "",
-					"project": ""
-				}
+				"one",
+				"two",
+				"three"
 			],
-			"name": "Group that includes targets"
+			"excluded": [],
+			"rules": null
 		},
 		{
-			"excluded": [
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "one",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "two",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "three",
-					"name": "",
-					"org": "",
-					"project": ""
-				}
-			],
 			"identifier": "ExcludedOnly",
-			"included": null,
-			"name": "Group that excludes targets"
-		},
-		{
+			"name": "Group that excludes targets",
+			"included": [],
 			"excluded": [
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "four",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "five",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "six",
-					"name": "",
-					"org": "",
-					"project": ""
-				}
+				"one",
+				"two",
+				"three"
 			],
-			"identifier": "IncludeAndExcludeGroup",
-			"included": [
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "one",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "two",
-					"name": "",
-					"org": "",
-					"project": ""
-				},
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "three",
-					"name": "",
-					"org": "",
-					"project": ""
-				}
-			],
-			"name": "Group that includes and excludes targets"
+			"rules": null
 		},
 		{
-			"excluded": null,
+			"identifier": "IncludeAndExcludeGroup",
+			"name": "Group that includes and excludes targets",
+			"included": [
+				"one",
+				"two",
+				"three"
+			],
+			"excluded": [
+				"four",
+				"five",
+				"six"
+			],
+			"rules": null
+		},
+		{
 			"identifier": "StartsWithT",
-			"included": null,
 			"name": "Starts With T",
+			"included": [],
+			"excluded": [],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -447,10 +366,10 @@
 			]
 		},
 		{
-			"excluded": null,
 			"identifier": "EqualsOne",
-			"included": null,
 			"name": "Equals With One",
+			"included": [],
+			"excluded": [],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -463,10 +382,10 @@
 			]
 		},
 		{
-			"excluded": null,
 			"identifier": "EqualsTwo",
-			"included": null,
 			"name": "Equals With Two",
+			"included": [],
+			"excluded": [],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -479,10 +398,10 @@
 			]
 		},
 		{
-			"excluded": null,
 			"identifier": "EqualsThree",
-			"included": null,
 			"name": "Equals With Three",
+			"included": [],
+			"excluded": [],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -495,19 +414,12 @@
 			]
 		},
 		{
-			"excluded": [
-				{
-					"account": "",
-					"environment": "",
-					"identifier": "three",
-					"name": "",
-					"org": "",
-					"project": ""
-				}
-			],
 			"identifier": "StartsWithTExcludesThree",
-			"included": null,
 			"name": "Equals With Three",
+			"included": [],
+			"excluded": [
+				"three"
+			],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -520,10 +432,10 @@
 			]
 		},
 		{
-			"excluded": null,
 			"identifier": "InOneTwoThree",
-			"included": null,
 			"name": "In operator with multiple values",
+			"included": [],
+			"excluded": [],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -538,10 +450,10 @@
 			]
 		},
 		{
-			"excluded": null,
 			"identifier": "GroupWithMultipleOrRules",
-			"included": null,
 			"name": "Equals With Three and two other rules",
+			"included": [],
+			"excluded": [],
 			"rules": [
 				{
 					"attribute": "identifier",
@@ -622,7 +534,7 @@
 	"tests": [
 		{
 			"flag": "Type_IntInt_State_Enabled_On_2_Off_011_Prerequisites_AlwaysOff_Should_Return_2",
-			"expected": 2
+			"expected": "2"
 		}
 	]
 }
